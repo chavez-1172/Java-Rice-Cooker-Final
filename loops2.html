@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Arrays</title>
+    <link rel="stylesheet" href="loops.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>The Three Main Types of Loops</h2>
+        <p>A loop is a smart control structure that repeats a block of code over and over until a specific condition tells it to stop. It saves you time, keeps your code clean, and does all the repetitive work automatically!</p>
+        <br>
+
+        <h3>1. The for Loop</h3>
+        <li>The FOR loop is used when you know the exact number of times you want to repeat something before you even start. For instance, I want the capybara to eat fro a total of 5 times only.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/capygrass.jpg" alt="grass " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Capybara For Loop</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class forLoopCapybara {
+                    public static void main(String[] args) {
+        <span style="color: yellow;">// Repeat exactly 5 times</span>
+                        for (int i = 1; i <= 5; i++) {
+                            System.out.println("Capybara takes a bath in a hot spring 
+                            for " + i + " time /s.");
+                        }
+                    }
+                }
+
+        <span style="color: yellow;"> /*In this sample code, we created a for loop and declared 
+        the int variable i, with a value of 1. 
+        
+        After that, we gave it a condition that as 
+        long as i is less than or equal to five, it will <span style="color: red;">increment (i++)</span>
+        or increase by one continuously. 
+        
+        And then on the string concatenation, the statement will be printed and the ( i ) 
+        will be changed to the total value until it reaches 5.*/</span>
+
+        <span style="color: blue;">OUTPUT:
+
+        Capybara takes a bath in a hot spring for <span style="color: red;">1</span> time /s.
+        Capybara takes a bath in a hot spring for <span style="color: red;">2</span> time /s.
+        Capybara takes a bath in a hot spring for <span style="color: red;">3</span> time /s.
+        Capybara takes a bath in a hot spring for <span style="color: red;">4</span> time /s.
+        Capybara takes a bath in a hot spring for <span style="color: red;">5</span> time /s.
+        </span>
+
+        </pre>
+        </div>
+        <br>
+
+        <div class="page-container">
+            <a href="loops.html" class="previouspage-btn">< Go Back</a>
+            <a href="loops3.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>

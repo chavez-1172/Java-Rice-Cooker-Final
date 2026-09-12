@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Modifiers</title>
+    <link rel="stylesheet" href="accessmod.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <p>Sample Code <span style="color: yellow;">Pep's Access Modifiers'</span>:</p>
+        <div class="image-container">
+            <img src="pics/frog.jpg" alt="frog " class="content-img">
+        </div>
+        <br>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class Frog{
+        <span style="color: yellow;">//A class containing all 4 access modifiers.</span>
+
+                    public String name = "Pep";            
+                    protected String faveSpot = "lake";   
+                    String faveFood = "maggots";               
+                    private String secret = "Loves to sleep.";
+                }
+
+        <span style="color: yellow;">/* Now that you know what access modifiers are used for,
+        you can now try using them when creating variables!
+
+        Wait...You wanna know if you can also use them on a class? Absolutely!
+        That's why when creating a class, you use the word <span style="color: blue;">public.</span>
+
+        If you're still confused on how access modifiers work, try using it on a class and variables,
+        and see how they all differ when it comes to accessibility.
+        Like they said, experience is the best teacher!*/
+        </span>    
+
+            </pre>
+        </div>
+    </div>
+
+        <div class="page-container">
+            <a href="accessmod2.html" class="previouspage-btn">< Go Back</a>
+            <a href="quiz.html?lesson=accessmod" class="nextpage-btn" onclick="takeQuiz('accessmod')">Take Quiz! ></a>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

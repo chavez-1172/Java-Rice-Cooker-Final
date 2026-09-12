@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+    <link rel="stylesheet" href="accessmod.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Abstraction</h2>
+        <p>Abstraction is hiding complex background steps and showing only essential operations to the user.</p>
+        <br>
+        <p>Think of a coffee machine. You just press a button to brew coffee without needing to worry about how it process inside the machine.</p>
+        <div class="image-container">
+            <img src="pics/coffeemachine.jpg" alt="coffee " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Coffee Machine Abstraction</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                abstract class CoffeeMachine {
+                    abstract void brew(); 
+                }
+        <span style="color: yellow;">//You have to use the keyword abstract when creating classes and variables.</span>
+
+                class Brewer extends CoffeeMachine {
+                    void brew() {
+                        System.out.println("Brewing coffee");
+                    }
+        <span style="color: yellow;">//Added an action to the abstract method.</span>
+
+                }
+
+        <span style="color: yellow;">/*In summary, abstraction is the act of 
+        <span style="color: blue;">creating classes and variables like a simple layout.</span> 
+        Looking back at the sample code, the method on the abstract class didn't 
+        contain anything. 
+
+        It only had an action when it was declared on the Main method.
+
+        Try it yourself!
+        </span>    
+
+        <span style="color: blue;">OUTPUT: 
+        Brewing coffee
+        </span>
+        
+            </pre>
+        </div>
+
+        
+        <h2 style="margin-top: 50px;">Try It Yourself! (Compiler)</h2>
+        <p style="font-size: 20px; margin-bottom: 20px;">Test your abstraction code here:</p>
+        
+        <div class="compiler-container">
+            <iframe src="https://onecompiler.com/embed/java?theme=dark&hideLogo=true&hideTitle=true" class="pixel-compiler-iframe"></iframe>
+        </div>
+
+        <div class="page-container">
+            <a href="oop4.html" class="previouspage-btn">< Go Back</a>
+            <a href="quiz.html?lesson=oop" class="nextpage-btn" onclick="takeQuiz('oop')">Take Quiz! ></a>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

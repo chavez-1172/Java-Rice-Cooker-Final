@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+    <link rel="stylesheet" href="condititions.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Relational Operators (Comparing Things)</h2>
+        <p>These compare two values to see how they relate to each other:</p>
+        <br>
+
+        <h3>1. Equal To ==</h3>
+        <li>Uses two equal ( == ) symbols and checks if two values are identical. Returns true if they match, and false if they do not.</li>
+            <br><li style="color: green;">(Example, 5 == 5 is true).</li>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">(the yellow texts are comments)</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class equalTo{
+                    public static void main(String[] args){
+                        int age = 18;
+
+        <span style="color: yellow;">//Equal to (==)</span>
+
+                        if (age == 18) {
+                            System.out.println("You just became an adult!");
+                        }
+
+        <span style="color: yellow;"> /*Since the int variable named age has a value of 18, the if condition will return true. 
+        Because of this, the output will print the statement.*/</span>
+
+        <span style="color: yellow;"> /*If you're wondering what the if{} condition was used for, 
+        keep reading because we will explain that later on!*/</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+
+        <h3>2. Not Equal To ! =</h3>
+        <li>Uses the exclamation point ( ! ) and equal ( = ) symbol and checks if two values are different. Returns true if they are not the same.</li>
+            <br><li style="color: green;">(Example, 5 != 3 is true).</li>
+        </li>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">(the yellow texts are comments)</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class notEqualTo{
+                    public static void main(String[] args){
+                        int age = 18;
+
+        <span style="color: yellow;">//Not Equal to (! =)</span>
+
+                        if (age != 0) {
+                            System.out.println("Age is valid.");
+                        }
+
+        <span style="color: yellow;"> /*Take note that the value of age was 18, but it still read as true in the conditions.
+
+        This is because Java read the code as:
+        <span style="color: red;">"if the age is not equal to 0, then it is true." </span>
+        That is the purpose of the ! = operator.*/</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+
+        <h3>3. Greater than ></h3>
+        <li>Uses the greater than ( > ) symbol and checks if the value on the left is larger than the value on the right.</li>
+            <br><li style="color: green;">(Example, 7 > 4 is true).</li>
+        </li>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">(the yellow texts are comments)</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class greaterThan{
+                    public static void main(String[] args){
+                        int age = 18;
+
+        <span style="color: yellow;">// Greater than (>)</span>
+
+                        if (age > 12) {
+                            System.out.println("You are older than a child.");
+                        }   
+
+        <span style="color: yellow;"> /*Is 18 a larger number than 12? Yes. 
+
+        That's why when compared using the > symbol, it returns true and prints the output.
+        If the value of age was smaller however, 8 for instance, 
+        it will return false and will not print any output.*/</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+
+        <h3>4. Less than <</h3>
+        <li>Uses the less than ( < ) symbol and checks if the value on the left is larger than the value on the right.</li>
+            <br><li style="color: green;">(Example, 2 < 8 is true).</li>
+        </li>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">(the yellow texts are comments)</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class lessThan{
+                    public static void main(String[] args){
+                        int age = 18;
+
+        <span style="color: yellow;"> // Less than (<)</span>
+
+                        if (age < 21) {
+                            System.out.println("You are under 21.");
+                        }
+
+        <span style="color: yellow;"> /*Is 18 a smaller number than 21? Absolutely!
+
+        That's why when compared using the < symbol, it still returns true and prints the output.
+        If the value of age was larger however, 67 for instance, 
+        it will return false and will not print any output.*/</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+
+        <h3>5. Greater than or equal to >=</h3>
+        <li>Uses the greater than ( > ) and equal ( = ) symbol and checks if the value on the left is either larger than or equal to the value on the right.</li>
+            <br><li style="color: green;">(Example, 5 >= 5 is true).</li>
+        </li>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">(the yellow texts are comments)</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class greaterThanOrEqualTo{
+                    public static void main(String[] args){
+                        int age = 18;
+
+        <span style="color: yellow;"> // Greater than or equal to (>=)</span>
+
+                        if (age >= 18) {
+                            System.out.println("You are eligible to vote.");
+                        }
+
+        <span style="color: yellow;"> /*This operator will check 2 conditions.
+
+        <span style="color: red;">Is 18 greater than 18? No, so that is false.</span> 
+        But is 18 equal or equivalent to 18? Yes! That's why it is still true.*/</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+        
+        <h3>6. Less than or equal to <=</h3>
+        <li>Uses the less than ( < ) and equal ( = ) symbol and checks if the value on the left is either smaller than or equal to the value on the right.</li>
+            <br><li style="color: green;">(Example, 3 <= 5 is true).</li>
+        </li>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">(the yellow texts are comments)</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class lessThanOrEqualTo{
+                    public static void main(String[] args){
+                        int age = 18;
+
+        <span style="color: yellow;"> // Less than or equal to (<=))</span>
+
+                        if (age <= 12) {
+                            System.out.println("You get a child discount.");
+                        } else {
+                            System.out.println("Standard ticket rate applies.");
+                        }
+
+        <span style="color: yellow;"> /*This operator will check 2 conditions as well.
+
+        <span style="color: red;">Is 18 less than 12? No, so that is false. But is 18 equal or equivalent to 12? 
+        STILL A NO! That's why it is false.</span>
+
+        It shouldn't print any output. But looking closer, you will see an <span style="color: blue;">else</span> statement.
+        Now what is an else statement for? 
+        It is used as a back-up code that will execute when the if condition returns false.
+                        
+        We will talk about it more later on!*/</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+        
+        <div class="page-container">
+            <a href="conditions.html" class="previouspage-btn">< Go Back</a>
+            <a href="conditions3.html" class="nextpage-btn">Next Page ></a>
+        </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Modifiers</title>
+    <link rel="stylesheet" href="accessmod.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Private</h2>
+        <p>Accessible only inside the exact class where it is declared. It is best used for protecting object variables from unauthorized external changes. Think of is as an inside joke that only those in the same circle of friend understands.</p>
+        <br>
+        <div class="image-container">
+            <img src="pics/friends.jpg" alt="friends " class="content-img">
+        </div>
+        <br>
+
+        <h2>Public</h2>
+        <li>Accessible from any class anywhere in the project. Best used for methods you want external code to call freely. Think of it as a public library that everyone has access to, and everyone can go to.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/lock.jpg" alt="lock " class="content-img">
+        </div>
+        <br>
+
+        <h2>Default</h2>
+        <li>Accessible only by classes within the same folder (package). No keyword is written before the variable or method. Think of it as a rule that only those in the same classroom or section knows.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/students.jpg" alt="students " class="content-img">
+        </div>
+        <br>
+
+        <h2>Protected</h2>
+        <li>Accessible within the same package and by any child classes (subclasses) that inherit from it, even in different packages. From the word <span style="color: blue;">inherit</span> those who inherit it are the only one who has access to it. 
+        Think of it as a child inheriting a company from his/her parents. Only that child has access to it.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/ceo.jpg" alt="ceo " class="content-img">
+        </div>
+        <br>
+
+        <div class="page-container">
+            <a href="accessmod.html" class="previouspage-btn">< Go Back</a>
+            <a href="accessmod3.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>

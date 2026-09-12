@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Classes</title>
+    <link rel="stylesheet" href="classes.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Java Classes</h2>
+        <p>For this lesson, we will be talking about Java Classes! Think of a class as the blueprint for a house.</p>
+        <br>
+
+        <h3>What is a Class?</h3>
+        <p>A Class is an abstract blueprint or template used to define the structure of something you want to represent in your program. By itself, a class is just an idea on paper it does not take up physical object space in memory until you build something from it. As an example, think of a blueprint for a house
+        It's just a blueprint, and not the actual house yet.</p>
+        <br>
+        <div class="image-container">
+            <img src="pics/house.jpg" alt="house " class="content-img">
+        </div>
+
+        <h3>A class defines two primary components:</h3>
+        <li><span style="color: blue;">Fields (Attributes): </span> Variables that describe what state or data it holds.</li>
+        <br>
+        <li><span style="color: blue;">Methods (Behaviors): </span> Functions that define what actions it can perform.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/method.gif" alt="method" class="content-img">
+        </div>
+        
+        <h3>Defining a Class</h3>
+        <p>Defining a class in Java means creating a blueprint that specifies what data an object will hold (fields) and what actions it can perform (methods).
+        For instance, I want to create an empty class for a car named Chevrolet.
+        </p>
+        <br>
+
+        <div class="image-container">
+            <img src="pics/car.jpg" alt="car " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Defining a Class</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class Chevrolet{
+        <span style="color: yellow;">// Main class named Chevrolet. </span>
+
+                    public static void main(String[] args){
+        <span style="color: yellow;">// Main method decleared inside the main class. </span>
+
+                        String color = "wine red";
+                        int speed = 24;
+        <span style="color: yellow;">//These are the fields/attributes which we can think of as the car's (Chevrolet) characteristics.</span>    
+       
+                        void beepBeep(){
+                            System.out.println("Beep Beep!");
+                        }
+        <span style="color: yellow;">//This is the method or the action the car can make. The Chevrolet car can make a beep beep sound.</span>    
+
+        <span style="color: yellow;"> /*Don't understand what the word <span style="color: blue;">void</span> meant? You will know in another lesson!
+
+        For now, you just have to know what attributes and methods are. 
+        You will know how to create and use one on the next lessons./</span>
+                    }
+                }
+            </pre>
+        </div>
+
+        <div class="page-container">
+            <a href="quiz.html?lesson=classes" class="nextpage-btn" onclick="takeQuiz('classes')">Take Quiz! ></a>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

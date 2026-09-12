@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+    <link rel="stylesheet" href="accessmod.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Inheritance</h2>
+        <p>Inheritance allows a child class to automatically reuse fields and methods from a parent class using the extends keyword.</p>
+        <br>
+        <p>Think of a Character! A Wizard inherits basic character traits (like walking) from a regular player, but adds its own special attribute or special skill.</p>
+        <div class="image-container">
+            <img src="pics/wizard.jpg" alt="wizard " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Wizard Inheritance</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class Player {
+        <span style="color: yellow;">//The Parent class with a method walk().</span>
+
+                    void walk() {
+                        System.out.println("Walking");
+                    }
+                }
+
+                public class Wizard <span style="color: red;">extends</span> Player {
+        <span style="color: yellow;">//The child class also with an inherited method walk() and additional method castSpell().</span>
+
+                    void walk(){
+                        System.out.println("I can also walk.")
+                    }
+                    void castSpell() {
+                        System.out.println("Heal");
+                    }
+                }
+
+        <span style="color: yellow;">/*In summary, inheritance is the process of 
+        <span style="color: blue;">passing down the attributes and methods of the parent class
+        to the child class.</span>
+        
+        Note that the attributes and methods of the parent class will NOT
+        be passed down unless you used the keyword <span style="color: blue;">extends</span>
+        when creating the child class. Look at the example code above.
+
+        You can experiment more with this by trying to code by yourself!*/
+        </span>    
+            </pre>
+        </div>
+
+        <div class="page-container">
+            <a href="oop2.html" class="previouspage-btn">< Go Back</a>
+            <a href="oop4.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>

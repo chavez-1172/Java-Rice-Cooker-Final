@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+    <link rel="stylesheet" href="condititions.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>The Three Types of Conditional Structures</h2>
+        <p>In programming, conditional statements are instructions that tell a program to perform different actions based on whether a specified condition evaluates to true or false.</p>
+        <br>
+
+        <h3>1. The If Statement</h3>
+        <li>The simplest check. Code inside an if block only runs if the condition passes or is equal to true. If it fails, Java ignores the block entirely and keeps moving down.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/good.jpg" alt="panda " class="content-img">
+        </div>
+        <br>
+
+        <h3>2. The if-else Statement</h3>
+        <li>Gives your program two distinct paths. Path A happens if the condition is true; Path B happens if it's false. If the if or first statement doesn’t work out, the else statement will serve as a back-up so that the code can still print results.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/computer.jpg" alt="computer " class="content-img">
+        </div>
+        <br>
+
+        <h3>3. The if-else if-else Ladder</h3>
+        <li>Used when you have multiple possibilities to test in order. Java checks conditions from top to bottom. As soon as it finds one condition that is true, it runs that block and skips everything else below it. But when the first few conditions are false, it will check all conditions until it finds one that returns true.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/ladder.jpg" alt="computer " class="content-img">
+        </div>
+        <br>
+
+        <h3>4. The Switch Case</h3>
+        <li>Evaluates a single expression against multiple possible constant values (called case labels). It is often cleaner and easier to read than a long if-else ladder when checking a single variable against specific fixed values.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/detective.jpg" alt="detective " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">ALL Conditional Structures</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class Main {
+                    public static void main(String[] args) {
+                        boolean isRaining = true;
+                        int rainIntensity = 7; 
+                        String weatherForecast = "rainy";
+
+        <span style="color: yellow;">// 1. Simple if</span> 
+                        if (isRaining) {
+                            System.out.println("Grab an umbrella!");
+                        }
+
+        <span style="color: yellow;">// 2. if-else</span> 
+                        if (isRaining) {
+                            System.out.println("Wear waterproof boots.");
+                        } else {
+                            System.out.println("Wear sneakers.");
+                        }
+
+        <span style="color: yellow;">// 3. switch</span>
+                        switch (weatherForecast) {
+                            case "rainy":
+                                System.out.println("Plan an indoor movie night.");
+                                break;
+                            case "sunny":
+                                System.out.println("Head to the beach.");
+                                break;
+                            default:
+                                System.out.println("Check the forecast again later.");
+                        }
+
+        <span style="color: yellow;">// 3. if-else if-else ladder</span>
+                        if (rainIntensity >= 8) {
+                            System.out.println("Alert: Heavy downpour, stay indoors!");
+                        } else if (rainIntensity >= 4) {
+                            System.out.println("Notice: Moderate rain, drive carefully.");
+                        } else {
+                            System.out.println("Notice: Light drizzle outside.");
+                        }
+
+        <span style="color: yellow;">/*This code demonstrates all 3 conditional structures using weather checks: 
+        a simple <span style="color: red;">if</span> prompts for a jacket, an <span style="color: red;">if-else</span> picks footwear,
+         and a <span style="color: red;">switch case</span>checks if you have an umbrella specifically when it is raining.*/</span>
+
+        <span style="color: blue;">OUTPUT: 
+            Grab an umbrella!
+            Wear waterproof boots.
+            Plan an indoor movie night.
+            Notice: Moderate rain, drive carefully.</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+        
+        <!-- PIXEL COMPILER SECTION -->
+        <h2 style="margin-top: 50px;">Try It Yourself! (Compiler)</h2>
+        <p style="font-size: 20px; margin-bottom: 20px;">Test your conditional statements code here:</p>
+        
+        <div class="compiler-container">
+            <iframe src="https://onecompiler.com/embed/java?theme=dark&hideLogo=true&hideTitle=true" class="pixel-compiler-iframe"></iframe>
+        </div>
+
+        <div class="page-container">
+            <a href="conditions2.html" class="previouspage-btn">< Go Back</a>
+            <a href="conditions5.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Arrays</title>
+    <link rel="stylesheet" href="loops.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Arrays</h2>
+        <p>Think of an array as your ultimate organizational chest when you have a big collection of items to manage or store all at once.</p>
+        <br>
+        <div class="image-container">
+            <img src="pics/arraychest.jpg" alt="chest " class="content-img">
+        </div>
+
+        <h3>What is an Array?</h3>
+        <li>An Array is a fixed-size container that holds multiple values of the same data type (Example, all Strings, all ints, or all booleans).</li>
+        <br>
+
+        <h3>Key Rules of Arrays</h3>
+        <span style="color: red;">1. Once you create an array with a specific size (ex, 5 slots), you cannot change its size later.</span>
+        <br>
+        <span style="color: red;">2. Java starts counting slots at 0, not 1!
+        <br>
+        Slot 1 is index 0
+
+        <br>
+        Slot 2 is index 1
+
+        <br>
+        Slot 3 is index 2
+        </span>
+        <br>
+
+        <h3>Declaring and Accessing Arrays</h3>
+        <li>You can create an array by giving it a type, square brackets that contains the "index" which indicates how many values will be stored [ ], and a list of values inside curly braces { }.
+        For instance, I want to have different kinds of sushi in a plate. The array is the plate, while the sushi are the values. Note that <span style="color: blue;">they are all sushi (same data type).</span>
+        </li>
+        <br>
+
+        <div class="image-container">
+            <img src="pics/sushi.jpg" alt="chest " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Sushi Array</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class sushiArray {
+                    public static void main(String[] args) {
+        <span style="color: yellow;">// Create an array to hold 3 types of sushi.</span>
+                        String[] plate = {"nigiri", "maki", "urumaki"};
+
+        <span style="color: yellow;">// Directly print each sushi by calling its index slot or what position it's in.</span>
+                        System.out.println("First sushi: " + plate[0]);
+                        System.out.println("Second sushi: " + plate[1]);
+                        System.out.println("Third sushi: " + plate[2]);
+                    }
+                }
+
+        <span style="color: yellow;">Very easy to understand, right!? The array is basically like a chest in which
+        you can store plenty of items (values) in. But you have to be organized (same data type).
+
+        If you don't get what the word index or index slot is, check your dictionary!*/</span>
+
+        <span style="color: blue;">OUTPUT:
+
+        First sushi: nigiri
+        Second sushi: maki
+        Third sushi: urumaki
+        </pre>
+        </div>
+        <br>
+
+        
+        <h2 style="margin-top: 50px;">Try It Yourself! (Compiler)</h2>
+        <p style="font-size: 20px; margin-bottom: 20px;">Test your arrays code here:</p>
+        
+        <div class="compiler-container">
+            <iframe src="https://onecompiler.com/embed/java?theme=dark&hideLogo=true&hideTitle=true" class="pixel-compiler-iframe"></iframe>
+        </div>
+
+        <div class="page-container">
+            <a href="loops4.html" class="previouspage-btn">< Go Back</a>
+            <a href="quiz.html?lesson=loops" class="nextpage-btn" onclick="takeQuiz('loops')">Take Quiz! ></a>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

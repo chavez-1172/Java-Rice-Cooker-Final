@@ -1,0 +1,136 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+@font-face{
+  font-family: pixelFont;
+  src: url('mac\'s\ Extended\ Minecraft.otf');
+}
+
+#background{
+  margin: 0;
+  padding: 0;
+  background-color: #22274e;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.javaTitle {
+  position: relative;
+  margin-top: 0.3in; 
+  margin-bottom: 0.5in;
+  color: white;
+  font-family: pixelFont;
+  font-size: 40px; 
+  text-shadow: 3px 3px 0px #000;
+}
+
+.title h2 {
+  margin: 0;
+}
+
+.content-box {
+  box-sizing: border-box;
+  font-family: pixelFont, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px 1in 1in 1in; 
+  padding: 2rem;
+  max-height: calc(100vh - 2.2in);
+  overflow-y: auto;
+  background-color: rgba(19, 28, 49, 0.92);
+  border: 3px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0px #080c14;
+}
+
+.content-box h2 {
+  color: #ffe600;
+  font-size: 40px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.content-box h3 {
+  color: #ffe600;
+  font-size: 30px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.content-box h2:first-of-type {
+  margin-top: 0;
+}
+
+.content-box p, li, span{
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.content-box ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.content-box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.content-box::-webkit-scrollbar-track {
+  background: #0d1322;
+  border-radius: 4px;
+}
+
+.content-box::-webkit-scrollbar-thumb {
+  background: #3a506b;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+.content-box::-webkit-scrollbar-thumb:hover {
+  background: #5bc0be;
+}
+
+.top-left-nav {
+    position: fixed;
+    top: 50px;
+    left: 150px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000; 
+}
+
+.nav-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #43244d;
+    box-shadow: 4px 4px 0px #1a0826;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
+}
+
+.nav-icon:hover img {
+    transform: scale(1.1);
+    box-shadow: 6px 6px 0px #1a0826;
+}
+
+.nav-icon:active img {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #1a0826;
+}

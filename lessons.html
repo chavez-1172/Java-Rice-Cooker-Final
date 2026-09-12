@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Rice Cooker</title>
+    <link rel="icon" type="image/png" href="HOMEPAGE/favicon.jpg">
+    <link rel="stylesheet" href="lessons.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+         </a>
+    </div>
+    
+    <div id="background"></div>
+    
+    <div class="title">
+        <h2>All Java Lessons Available!</h2>
+    </div>
+
+        <div class="icon-container">
+            <a class="icons" href="java.html">
+                <div class="icon-image">
+                    <img src="pics/javaicon.jpg" alt="javaicon">
+                </div>
+                <div class="icon-text">
+                    <h2>What is Java?</h2>
+                    <p>Learn about the brief history of Java.</p>
+                </div>
+            </a>
+
+            <a class="icons" href="variables.html">
+                <div class="icon-image">
+                    <img src="pics/variables.jpg" alt="variables">
+                </div>
+                <div class="icon-text">
+                    <h2>Data Types and Variables</h2>
+                    <p>Learn about the different data types.</p>
+                </div>
+            </a>
+
+            <a class="icons" href="conditions.html">
+                <div class="icon-image">
+                    <img src="pics/conditions.jpg" alt="conditions">
+                </div>
+                <div class="icon-text">
+                    <h2>Conditional Statements</h2>
+                    <p>Learn more about conditional statements</p>
+                </div>
+            </a>
+
+            <a class="icons" href="loops.html">
+                <div class="icon-image">
+                    <img src="pics/loops.jpg" alt="loops">
+                </div>
+                <div class="icon-text">
+                    <h2>Loops and Arrays</h2>
+                    <p>Learn about creating loops and what arrays are.</p>
+                </div>
+            </a>
+
+            <a class="icons" href="classes.html">
+                <div class="icon-image">
+                    <img src="pics/classes.jpg" alt="classes">
+                </div>
+                <div class="icon-text">
+                    <h2>Java Classes</h2>
+                    <p>What are Java classes?</p>
+                </div>
+            </a>
+
+            <a class="icons" href="object.html">
+                <div class="icon-image">
+                    <img src="pics/object.jpg" alt="object">
+                </div>
+                <div class="icon-text">
+                    <h2>Java Objects and Methods</h2>
+                    <p>What are Java objects and methods?</p>
+                </div>
+            </a>
+
+            <a class="icons" href="accessmod.html">
+                <div class="icon-image">
+                    <img src="pics/accessmod.jpg" alt="accessmod">
+                </div>
+                <div class="icon-text">
+                    <h2>Access Modifiers</h2>
+                    <p>Learn how you can protect your Java code.</p>
+                </div>
+            </a>
+
+            <a class="icons" href="oop.html">
+                <div class="icon-image">
+                    <img src="pics/oop.jpg" alt="oops">
+                </div>
+                <div class="icon-text">
+                    <h2>Object Oriented Programming</h2>
+                    <p>What is Java Object Oriented Programming?</p>
+                </div>
+            </a>
+        </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                const progress = JSON.parse(localStorage.getItem('java_rice_cooker_progress') || '{}');
+                const mapping = {
+                    'java.html': 'java',
+                    'variables.html': 'variables',
+                    'conditions.html': 'conditions',
+                    'loops.html': 'loops',
+                    'classes.html': 'classes',
+                    'object.html': 'objects',
+                    'accessmod.html': 'accessmod',
+                    'oop.html': 'oop'
+                };
+                document.querySelectorAll('.icon-container a.icons').forEach(card => {
+                    const href = card.getAttribute('href');
+                    const key = mapping[href];
+                    if (key && progress[key] && progress[key].passed) {
+                        const iconText = card.querySelector('.icon-text');
+                        if (iconText && !iconText.querySelector('.lesson-badge')) {
+                            const badge = document.createElement('div');
+                            badge.className = 'lesson-badge';
+                            badge.style.cssText = 'display: inline-block; background-color: #11a632; color: #ffffff; font-size: 14px; padding: 3px 8px; border-radius: 4px; margin-top: 6px; border: 1px solid #ffffff; box-shadow: 2px 2px 0 #000; font-family: pixelFont, sans-serif;';
+                            badge.textContent = '⭐ Quiz Passed';
+                            iconText.appendChild(badge);
+                        }
+                    }
+                });
+            } catch(e) {}
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+    <link rel="stylesheet" href="accessmod.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Polymorphism</h2>
+        <p>Polymorphism allows different classes to have their own unique versions of the exact same method name.</p>
+        <br>
+        <p>Duck quacks and a cat meows, but both are responding to the exact same make a noise command.</p>
+        <div class="image-container">
+            <img src="pics/duck.jpg" alt="duck " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Duck Polymorphism</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                class Animal {
+                    void makeNoise() {
+                        System.out.println("Any animal sound");
+                    }
+                }
+
+                class Duck extends Animal {
+                    <span style="color: red;">@Override</span>
+                    void makeNoise() {
+                        System.out.println("Quack quack"); 
+                <span style="color: yellow;">//the duck class used the same method
+                but it prints a different statement through method overloading (see your dictionary).
+                </span>
+                    }
+                }
+
+        <span style="color: yellow;">/*In summary, polymorphism is the act of 
+        <span style="color: blue;">using the same attributes or methods and
+        being able to change it in different forms</span> through overloading and overriding.
+
+        Don't forget to check the dictionary for unfamiliar words and terms!*/
+        </span>    
+            </pre>
+        </div>
+
+        <div class="page-container">
+            <a href="oop3.html" class="previouspage-btn">< Go Back</a>
+            <a href="oop5.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>

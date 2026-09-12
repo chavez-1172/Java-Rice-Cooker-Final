@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Objects and Methods</title>
+    <link rel="stylesheet" href="objects.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Java Objects and Methods</h2>
+        <p>Now that you have a class blueprint, let me show you how to build actual Objects from it!</p>
+        <br>
+
+        <h3>What is an Object?</h3>
+        <p>An Object is a concrete, real instance built directly from a class blueprint. While a class is the blueprint, an object is the actual physical item stored in your computer's memory (instantiation).
+        Think of it as real-world objects. In our previous Chevrolet class example before, you can think of it as one of a car's object such as a spare tire.</p>
+        <br>
+        <div class="image-container">
+            <img src="pics/tire.jpg" alt="tire " class="content-img">
+        </div>
+        <br>
+        <p>Each object created from the same class has its own independent copy of the fields defined in that class.</p>
+        <br>
+
+        <h3>Instantiating and Using Objects</h3>
+        <li>You create objects using the new keyword, then use dot notation (.) to access their fields and methods.</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/method.gif" alt="method" class="content-img">
+        </div>
+        
+        <h3>Calling Methods on an Object</h3>
+        <span style="color: blue;"><span style="color: green;">Instantiate it</span> using the new keyword.</span>
+        <br>
+        <span style="color: blue;"><span style="color: green;">Use dot notation (.)</span> to access its fields and run its methods.</span>
+        <br>
+        <p>As an example code, let's have the frog named Pep to demonstrate to us how to call a method through an object!</p>
+        <br>
+        <div class="image-container">
+            <img src="pics/pepe.jpg" alt="pepe" class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Pep Object and Method</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class Frog{
+        <span style="color: yellow;">Create a class with attributes.</span>
+
+                    String frogName;
+
+        <span style="color: yellow;">Create a method or behavior.</span>
+                    void eatFly(){
+                        System.out.println(frogName + " ate a fly!");
+                    }
+            
+         <span style="color: yellow;">Creating an object and calling the method on the Main method.</span>
+                    public static void main(String[] args){
+       
+        <span style="color: yellow;">Create a new Frog object named pep.</span>
+                        Frog pep = new Frog();
+                        pep.frogName = "Pep";
+
+        <span style="color: yellow;">Call the method eatFly().</span>
+                        pep.eatFly();
+                    }
+                }
+
+        <span style="color: yellow;">//In this code sample, we created a class named Frog.
+
+        The <span style="color: blue;">frogName</span> is the variable where we will put the name of the 
+        frog object.
+
+        We also created a method named <span style="color: blue;">eatFly</span> which prints a statement once it is called.
+
+        On the <span style="color: blue;">Main method, </span> we created a new Frog object named pep, and
+        assigned a value to the frogName variable which is Pep, the frog's name. 
+
+        Now you have an object!
+
+        Then how did we call the <span style="color: blue;">method? </span> we called it by using the
+        objects name (pep) and used the dot ( . ) notation, 
+        followed by open and close parentheses.
+
+        Note that the method won't execute by itself. You have to
+        call it on the main method as shown in the sample code.
+        </span>    
+
+        <span style="color:blue;">OUTPUT: 
+        Pep ate a fly!
+        </span>
+        
+            </pre>
+        </div>
+
+        <!-- PIXEL COMPILER SECTION -->
+        <h2 style="margin-top: 50px;">Try It Yourself! (Compiler)</h2>
+        <p style="font-size: 20px; margin-bottom: 20px;">Test your Java objects and methods code here:</p>
+        
+        <div class="compiler-container">
+            <iframe src="https://onecompiler.com/embed/java?theme=dark&hideLogo=true&hideTitle=true" class="pixel-compiler-iframe"></iframe>
+        </div>
+
+        <div class="page-container">
+            <a href="object.html" class="previouspage-btn">< Go Back</a>
+            <a href="quiz.html?lesson=objects" class="nextpage-btn" onclick="takeQuiz('objects')">Take Quiz! ></a>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

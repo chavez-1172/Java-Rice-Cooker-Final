@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Objects and Methods</title>
+    <link rel="stylesheet" href="objects.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Java Objects and Methods</h2>
+        <p>Now that you have a class blueprint, let me show you how to build actual Objects from it!</p>
+        <br>
+
+        <h3>What is a Method?</h3>
+        <p>A method in Java is a block of code inside a class that performs a specific action. Think of a method as a command or action button you can press whenever you want your object to do something!</p>
+        <br>
+        <div class="image-container">
+            <img src="vids/eating.gif" alt="eating " class="content-img">
+        </div>
+        <br>
+
+        <h3>The 3 Key Parts of a Method</h3>
+        <p>When you define a method, you tell Java three things:</p>
+        <br>
+        <span style="color: blue;"><span style="color: green;">Return Type:</span> What kind of data the method gives back after running (void if it gives back nothing, int for numbers, String for text).</span>
+        <br>
+        <span style="color: blue;"><span style="color: green;">Method Name:</span> The name you use to call the action (written in camelCase).</span>
+        <br>
+        <span style="color: blue;"><span style="color: green;">Parameters (Optional):</span> Inputs passed inside parentheses () that the method needs to do its job.</span>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Creating a Method</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class Mimming{
+                    public static void main(String[] args){
+       
+                        void eatFish(String treat){
+                            System.out.println("Mimming ate a fish.");
+                    }
+                }
+        <span style="color: yellow;">//In this code sample, we created a method named eatFish.
+
+        The <span style="color: yellow;">void</span> is the return type, meaning the method wont return anything.
+
+        The <span style="color: yellow;">(String treat)</span> is the parameter, which we can put a value into once
+        the method has been called.
+
+        The <span style="color: yellow;">System.out.println</span> is the ACTION the method will do. It will print
+        the text.
+        </span>    
+
+        <span style="color:blue;">OUTPUT: 
+        Mimming ate a fish.
+        </span>
+            </pre>
+        </div>
+
+        <h3>Why Use Methods?</h3>
+        <p>Instead of writing the same code over and over, you write it once in a method and call it whenever you need it.</p>
+        <br>
+        <p>Methods break complex programs into small, clean, and organized steps.</p>
+        <div class="image-container">
+            <img src="vids/typing.gif" alt="eating " class="content-img">
+        </div>
+        <br>
+
+        <div class="page-container">
+            <a href="object2.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>

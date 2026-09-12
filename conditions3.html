@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+    <link rel="stylesheet" href="condititions.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Logical Operators (Combining Questions)</h2>
+        <p>Logical operators let you combine conditions to check if one of those or ALL of those are true or false. Logical operators let you chain questions together.</p>
+        <br>
+
+        <h3>1. AND Operator ( && )</h3>
+        <li>Uses two ampersand ( && ) symbols and checks if both values are true. Note that both conditions MUST be true!</li>
+            <br><li style="color: green;">You will only eat the snack if it is Sweet AND Chocolate. (If it's sweet but vanilla, you walk away!)</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/chocolate.jpg" alt="choc " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;"> AND ( && ) Operator</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class andOperator{
+                    public static void main(String[] args){
+                        boolean isSweet = true;
+                        boolean isChocolate = false;
+
+                        if (isSweet && isChocolate) {
+                            System.out.println("I will eat the snack!");
+                        } else {
+                            System.out.println("Not what I wanted.");
+                        }
+
+        <span style="color: yellow;"> /*We have two boolean variables which are 
+        <span style="color: red;">isSweet</span> and <span style="color: red;">isChocolate</span> wherein only the isSweet is true.
+        Using the AND && operator which checks if both values are true, which statement do you think 
+        will be printed?*/</span>
+
+        <span style="color: yellow;"> /*That's right! The <span style="color: red;">else-condition</span> will be the one executed since one of the variables
+        are false. This immediately makes the if-condition false.*/</span>
+
+        <span style="color: blue;">OUTPUT: Not what I wanted.</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+
+        <h3>2. OR Operator ( || ) </h3>
+        <li>Uses two vertical pipe ( || ) symbols and checks if atleast ONE of the values are true. Even if one condition is false, and the other is true, it will still be true!</li>
+            <br><li style="color: green;">The dog will fetch the item if it is a Tennis Ball OR a Stick. (Either one makes the dog happy!)</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/dog.jpg" alt="dog" class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">OR ( || ) Operator</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class andOperator{
+                    public static void main(String[] args){
+                        boolean isTennisBall = false;
+                        boolean isStick = true;
+
+                        if (isTennisBall || isStick) {
+                            System.out.println("Dog fetches the item!");
+                        } else {
+                            System.out.println("Dog ignores it.");
+                        }
+
+        <span style="color: yellow;"> /*We have two boolean variables which are 
+        <span style="color: red;">isTennisBall</span> and <span style="color: red;">isStick</span> wherein only the isStick is true.
+        Using the OR || operator which checks if atleast ONE of the values are true, 
+        which statement do you think will be printed?*/</span>
+
+        <span style="color: yellow;"> /*This time, the <span style="color: red;">if-condition</span> will be the one executed since 
+        the whole if-codition returns true because ONE of them is true. 
+        Regardless of the one false value, it will still be true.
+
+        This immediately makes the if-condition true.*/</span>
+
+        <span style="color: blue;">OUTPUT: Dog fetches the item!</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+
+         <h3>3. NOT Operator ( ! ) </h3>
+        <li>Uses exclamation point ( ! ) symbol and reverses a true to false, or false to true. It is used to invert or reverse a boolean value.</li>
+            <br><li style="color: green;">!isCatAwake means "The cat is asleep."</li>
+        <br>
+        <div class="image-container">
+            <img src="pics/catsleeping.jpg" alt="dog" cat="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">NOT ( ! ) Operator</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class andOperator{
+                    public static void main(String[] args){
+                        boolean isCatAwake = false;
+
+                if (!isCatAwake) {
+                    System.out.println("The cat is asleep.");
+                }
+
+        <span style="color: yellow;"> /*We have one boolean variable named
+        <span style="color: red;">isCatAwake</span> whose value is true.
+        Using the NOT ! operator which reverses the value of a boolean, 
+        do you think the statement will still be printed even if the value of isCatAwake is false?*/</span>
+
+        <span style="color: yellow;"> /*That's right! The if condition will be executed since even if the 
+        original value of the isCatAwakeis false, it became true once we used the 
+        NOT ! operator on the if-condition.*/</span>
+
+        <span style="color: blue;">OUTPUT: The cat is asleep.</span>
+                    }
+                }
+            </pre>
+        </div>
+        <br>
+        
+        <div class="page-container">
+            <a href="conditions2.html" class="previouspage-btn">< Go Back</a>
+            <a href="conditions4.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>

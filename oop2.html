@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+    <link rel="stylesheet" href="accessmod.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Encapsulation</h2>
+        <p>Encapsulation is hiding class variables behind <span style="color: blue;">private</span> so they cannot be changed directly from outside the class.</p>
+        <br>
+        <p>Think of a <span style="color: blue;">Capsule Pill!</span> The chemical ingredients are sealed inside a shell so no one can mess or change the contents inside directly.</p>
+        <div class="image-container">
+            <img src="pics/capsule.jpg" alt="capsule " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Pill Encapsulation</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class Pill{
+                    private String chemical = "Aspirin";
+        <span style="color: yellow;">//The chemical is locked inside a pill (the data is encapsulated in a private variable).</span>
+
+                    public void takePill() {
+                        System.out.println("Taking " + chemical + ".");
+                    }
+        <span style="color: yellow;">//Uses a public method to use the encapsulated variable.</span>
+                }
+
+        <span style="color: yellow;">/*In summary, encapsulation is the process of <span style="color: blue;">enclosing your data in a private variable or class</span>
+        so that it is not easily changed or modified.
+
+        You can experiment more with this by trying to code by yourself!*/
+        </span>    
+
+        <span style="color:blue;">OUTPUT (This will not print unless method is called in the Main method.): 
+        Taking Aspirin.
+        </span>
+            </pre>
+        </div>
+
+        <div class="page-container">
+            <a href="oop.html" class="previouspage-btn">< Go Back</a>
+            <a href="oop3.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>

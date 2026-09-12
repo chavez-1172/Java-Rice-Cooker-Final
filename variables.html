@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types & Variables</title>
+    <link rel="stylesheet" href="variable.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>Data Types & Variables</h2>
+
+        <p>Think of a variable as a labeled storage box in memory used to store data. In Java, you must declare what kind of data fits inside the box (its data type).</p>
+        <br>
+        <div class="image-container">
+            <img src="pics/Data types.jpg" alt="Variables as Boxes" class="content-img">
+        </div>
+
+        <p>For instance, dog is an animal, banana is a fruit, and  blobfish is a fish.</p>
+        <br>
+        <div class="image-container">
+            <img src="pics/cutes.jpg" alt="examples" class="content-img">
+        </div>
+        <br>
+        <p>The same logic applies to variables and data types. Each data type can only accept a value that fits into their category.</p>
+        <br>
+
+        <h2>1.Primitive Types (Direct Values)</h2>
+        <p>These types of variables hold single, basic pieces of data.</p>
+        <br>
+
+        <h3>int (Integers):</h3> <p>Holds whole numbers only as values.</p>
+        <p>Example: <code style="color: #79c0ff; font-family: pixelFont;">int watermelonSlices = 8;</code></p>
+        <br>
+
+        <h3>double (Decimals):</h3> <p> Holds numbers that contain decimals as values.</p>
+        <p>Example: <code style="color: #79c0ff; font-family: pixelFont;">double catWeight = 4.57788778;</code></p>
+        <br> 
+
+        <h3>char (Single Character):</h3> <p>One letter or symbol enclosed in 'single quotes'.</p>
+        <p>Example: <code style="color: #79c0ff; font-family: pixelFont;">char rank = '?';</code></p>
+        <br>
+
+        <h3>boolean (True/False):</h3> <p>A simple on/off or true/false switch. This value only outputs true or false.</p>
+        <p>Example: <code style="color: #79c0ff; font-family: pixelFont;">boolean amlHungry = true;</code></p>
+        <br>
+
+        <h2>Sample Code</h2>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+            class sample {
+                 public static void main(String[] args) {
+
+                     String mimmingName = "Momo";
+
+                     int age = 3;
+
+                     double weight = 4.2;
+
+                     boolean lovesFood = true;
+
+
+                    System.out.println(mimmingName + " is " + age + " years old.");
+
+                    System.out.println("Loves food? " + lovesFood);
+                 } 
+            } 
+            </pre>
+        </div>
+
+        <h2>OUTPUT</h2>
+        <div class="output-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace; font-size: 28px; color: #56d364; line-height: 1.6;">
+                Momo is 3 years old.
+                Loves food? true
+            </pre>
+        </div>
+
+        <h2>2. Reference Types (Complex Data)</h2>
+        <p>These hold complex data or points to bigger items in memory. From the term "Reference", think of it as an object that points to another storage where data is stored.</p>
+        <div class="image-container">
+            <img src="pics/Reference.jpg" alt="Reference Types Illustration" class="content-img">
+        </div>
+        <br>
+
+        <h3>String:</h3> <p>Text written in "double quotes" and accepts text values, from words to sentences.</p>
+        <p>Example: <code style="color: #79c0ff; font-family: pixelFont;">String mimmingName = "Momo";</code></p>
+        <br>
+
+        <h3>Arrays:</h3> <p>A grouped list of items of the same type. In this example, all values placed inside the treats[] array are all String variables.</p>
+        <p> Example: <code style="color: #79c0ff; font-family: pixelFont;">String treats[] = {"Fish", "Chicken", "Milk"};</code></p>
+        <br>
+
+        <p>We will be more in-depth with Arrays in another lesson. For now, you should only know that it is a reference type.</p>
+        <br>
+
+        <p style="color: #11a632;">Congrats on finishing the second lesson!</p>
+
+       
+        <h2 style="margin-top: 50px;">Try It Yourself! (Compiler)</h2>
+        <p style="font-size: 20px; margin-bottom: 20px;">Test your code changes right here:</p>
+        
+        <div class="compiler-container">
+            <iframe src="https://onecompiler.com/embed/java?theme=dark&hideLogo=true&hideTitle=true" class="pixel-compiler-iframe"></iframe>
+        </div>
+
+        <div class="quiz-container">
+            <button class="quiz-btn" onclick="takeQuiz('variables')">Take Quiz!</button>
+        </div>
+    </div>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>

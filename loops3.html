@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Arrays</title>
+    <link rel="stylesheet" href="loops.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>The Three Main Types of Loops</h2>
+        <p>A loop is a smart control structure that repeats a block of code over and over until a specific condition tells it to stop. It saves you time, keeps your code clean, and does all the repetitive work automatically!</p>
+        <br>
+
+        <h3>2. The While Loop</h3>
+        <li>The WHILE loop is used when you want to repeat something as long as a condition stays true, but you don't know in advance how many times it will take. For instance, I want a shark named Sharknado to eat until it is full!</li>
+        <div class="image-container">
+            <img src="pics/shark.jpg" alt="shark " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Shark While Loop</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class whileLoopSharknado {
+                    public static void main(String[] args) {
+                        boolean isHungry = true;
+                        int fishEaten = 0;
+
+                        while (isHungry) {
+                            grassEaten++;
+                            System.out.println("Sharknado munches  " + fishEaten + " fish/es.");
+
+        <span style="color: yellow;">// Shark gets full after 3 bundles</span>
+                            if (fishEaten == 3) {
+                                isHungry = false;
+                                System.out.println("Shark is full! Time for a nap.");
+                            }
+                        }
+                    }
+                }
+
+        <span style="color: yellow;"> /*In this sample code, we created a while loop and declared 
+        two variables.
+
+        <span style="color: blue;">The boolean isHungry with a true value, which represents that
+        Sharknado is hungry.</span>
+        <br>
+        <span style="color: blue;">The int fishEaten with a 0 value, which represents the
+        number of fish sharknado has eaten. Well for now, there is 0.</span>
+        
+        After that, we gave the while loop a condition that when fishEaten
+        becomes equivalent to three after the loop has executed and increments it by one,
+        it will print the statement below.
+
+        However, in the if-condition, we gave a condition that when fishEaten 
+        becomes equivalent to three, <span style="color: red;">isHungry will turn into false.</span>
+        This will make the loop stop entirely and prints the second statement below.
+        
+        Here is the output of the code for better understanding.*/</span>
+
+        <span style="color: blue;">OUTPUT:
+
+        Sharknado munches <span style="color: red;">1</span> fish/es.
+        Sharknado munches <span style="color: red;">2</span> fish/es.
+        Sharknado munches <span style="color: red;">3</span> fish/es.
+        <span style="color: yellow;">//The loop stops since it reaches 3.</span>
+        Shark is full! Time for a nap.
+        </span>
+
+        </pre>
+        </div>
+        <br>
+
+        <div class="page-container">
+            <a href="loops2.html" class="previouspage-btn">< Go Back</a>
+            <a href="loops4.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>

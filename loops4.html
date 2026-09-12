@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Arrays</title>
+    <link rel="stylesheet" href="loops.css">
+</head>
+<body>
+    <div class="top-left-nav">
+        <a href="lessons.html" class="nav-icon" title="modules">
+            <img src="pics/modules.jpg" alt="Basics">
+        </a>
+        <a href="basics.html" class="nav-icon" title="Basics">
+            <img src="pics/basics.jpg" alt="Basics">
+        </a>
+        <a href="dictionary.html" class="nav-icon" title="Dictionary">
+            <img src="pics/dictionary.jpg" alt="Dictionary">
+        </a>
+    </div>
+
+    <div id="background"></div>
+
+    <h1 class="javaTitle">Java Programming Language</h1>
+
+    <div class="content-box">
+        <h2>The Three Main Types of Loops</h2>
+        <p>A loop is a smart control structure that repeats a block of code over and over until a specific condition tells it to stop. It saves you time, keeps your code clean, and does all the repetitive work automatically!</p>
+        <br>
+
+        <h3>3. The do-while Loop</h3>
+        <li>The DO-WHILE loop is Similar to the while loop, but with one super important rule: it always runs <span style="color: yellow;">at least once</span> before checking the condition. For instance, a hamster wants to eat a sunflower seed. It eats one sunflower seed, then after that, he decides if he wants to eat more.</li>
+        <div class="image-container">
+            <img src="pics/hamster.jpg" alt="hamster " class="content-img">
+        </div>
+        <br>
+
+        <p>Sample Code <span style="color: yellow;">Hamster do-while Loop</span>:</p>
+        <div class="code-box" style="background: #111a33; border: 2px solid #2d3b59; padding: 12px; margin: 12px 0; border-radius: 4px; text-align: left; overflow-x: auto;">
+            <pre style="font-family: monospace, monospace; font-size: 28px; color: #11a632; line-height: 1.6;">
+                public class doWhileHamster {
+                    public static void main(String[] args) {
+                        boolean eatSunflower = false; 
+        <span style="color: yellow;">// He doesn't want the sunflower.</span>
+                        do {
+                            System.out.println("The hamster eats a sunflower");
+                        } while (eatSunflower);
+
+                        System.out.println("The hamster sleeps instead.");
+                    }
+                }
+
+        <span style="color: yellow;"> /*In this sample code, we created a boolean variable
+        named eatSunflower with a value of false. This means that the hamster doesn't want
+        to eat a sunflower.
+
+        <span style="color: blue;">But since we used the do-while loop, he will still eat
+        one sunflower regardless if he wants it or not.</span>
+        <br>
+        <span style="color: blue;">After he ate one sunflower, he already decided that he REALLY
+        doesn't want to eat and he just sleeps instead.</span>
+        
+        With this, the do-while loop gets terminated since it already executed once even with a 
+        <span style="color: red;">false value.</span>
+
+        But what if the value of eatSunflower was true instead? Then the loop will execute
+        infinitely as long as the value stays true.
+        
+        Here is the output of the original code for better understanding.*/</span>
+
+        <span style="color: blue;">OUTPUT:
+
+        The hamster eats a sunflower
+        The hamster sleeps instead.
+        </pre>
+        </div>
+        <br>
+
+        <div class="page-container">
+            <a href="loops3.html" class="previouspage-btn">< Go Back</a>
+            <a href="arrays.html" class="nextpage-btn">Next Page ></a>
+        </div>
+    </div>
+</body>
+</html>
